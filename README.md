@@ -1,11 +1,12 @@
-# CosmWasm Starter Pack
+# Archway Network Starter Pack
 
 This is a template to build smart contracts in Rust to run inside a
 [Cosmos SDK](https://github.com/cosmos/cosmos-sdk) module on all chains that enable it.
 To understand the framework better, please read the overview in the
-[cosmwasm repo](https://github.com/CosmWasm/cosmwasm/blob/master/README.md),
-and dig into the [cosmwasm docs](https://www.cosmwasm.com).
-This assumes you understand the theory and just want to get coding.
+[archway repo](https://github.com/archway-network/archway/blob/main/README.md),
+and dig into the [archway docs](https://docs.archway.io).
+
+The below instructions assume you understand the theory and just want to get coding.
 
 ## Creating a new repo from template
 
@@ -28,7 +29,7 @@ Go to the folder in which you want to place it and run:
 **Latest: 0.16**
 
 ```sh
-cargo generate --git https://github.com/CosmWasm/cw-template.git --name PROJECT_NAME
+cargo generate --git git@github.com:drewstaylor/archway-template.git --name PROJECT_NAME
 ````
 
 **Older Version**
@@ -36,13 +37,13 @@ cargo generate --git https://github.com/CosmWasm/cw-template.git --name PROJECT_
 Pass version as branch flag:
 
 ```sh
-cargo generate --git https://github.com/CosmWasm/cw-template.git --branch <version> --name PROJECT_NAME
+cargo generate --git git@github.com:drewstaylor/archway-template.git --branch <version> --name PROJECT_NAME
 ````
 
 Example:
 
 ```sh
-cargo generate --git https://github.com/CosmWasm/cw-template.git --branch 0.14 --name PROJECT_NAME
+cargo generate --git git@github.com:drewstaylor/archway-template.git --branch 0.14 --name PROJECT_NAME
 ```
 
 You will now have a new folder called `PROJECT_NAME` (I hope you changed that to something else)
@@ -81,7 +82,7 @@ running `cargo check` or `cargo unit-test`.
 
 Once you have your custom repo, you should check out [Developing](./Developing.md) to explain
 more on how to run tests and develop code. Or go through the
-[online tutorial](https://docs.cosmwasm.com/) to get a better feel
+[online tutorial](https://docs.archway.io/docs/create/guides/my-first-dapp/start) to get a better feel
 of how to develop.
 
 [Publishing](./Publishing.md) contains useful information on how to publish your contract
